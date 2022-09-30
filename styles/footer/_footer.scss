@@ -1,0 +1,30 @@
+@import '../theme','form','social-media';
+
+footer {
+    background-color: $pale-purple;
+    margin-bottom: 0;
+    padding: $space-3;
+    margin-top: $space-3;
+}
+
+.footer-title{
+    color: $dark-brown;
+    text-align: center;
+}
+
+@media (min-width: 769px) {
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {   
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

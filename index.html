@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Psicóloga Valeria Parpaglione</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./assets/logo.png">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about-me.html">Sobre mí</a>
+            <a href="child-and-youth-therapy.html">Terapia Infanto-Juvenil</a>
+            <a href="#">Terapia floral</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div id="main">
+            <header>
+                <div id="logo">
+                    <img src="./assets/logo.png" />
+                    <h3 id="logo-text">Psicóloga Valeria Parpaglione</h2>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+                <nav>
+                    <ul>
+                        <li class="active"><a ref="#">Inicio</a></li>
+                        <li><a href="about-me.html">Sobre mí</a></li>
+                        <li><a href="child-and-youth-therapy.html">Terapia Infanto-Juvenil</a></li>
+                        <li><a href="#">Terapia floral</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <div class="card animate__animated animate__fadeInDown">
+                        <h1>Psicóloga clínica<br/> Valeria Parpaglione</h1>
+                        <img src="./assets/photo-alternative.png" id="photo"/>
+                        <p>
+                            Mi nombre es Valeria Parpaglione, psicóloga clínica y licenciada en psicología de la Pontificia Universidad Católica de Valparaíso. 
+                            Mi trabajo consiste en brindar un servicio psicológico integral para niños, niñas y jóvenes, donde prime la empatía y horizontalidad, 
+                            la seguridad y confianza, la ética, el papel activo del paciente y de su entorno en la terapia.
+                        </p>
+                    </div>
+                    <div class="card animate__animated animate__fadeInDown animate__delay-1s">
+                        <img src="./assets/flowers.png"/>
+                    </div>
+                </section>
+                <section id="section-2">
+                    <div class="service">
+                        <img src="./assets/videocall.png" />
+                        <p class="service-text">Terapia floral online</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloremque similique consequuntur modi perspiciatis,</p>
+                    </div>
+                    <div class="service">
+                        <img src="./assets/divan.png" />
+                        <p class="service-text">Atención psicológica infanto-juvenil presencial</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloremque similique consequuntur modi perspiciatis,</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="card" id="section-3-card-1">
+                        <img src="./assets/flowers-2.png"/>
+                    </div>
+                    <div class="card" id="section-3-card-2">
+                        <h1>Lorem ipsum</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloremque similique consequuntur modi perspiciatis, 
+                        dolore atque esse voluptates expedita neque labore? Ducimus praesentium eveniet quisquam excepturi officia voluptate, dolore labore.</p>
+                    </div>
+                </section>
+                <footer id="contact">
+                    <div id="social-media" >
+                        <h1 class="footer-title">Encuéntrame en</h1>
+                        <div class="social-media-account">
+                            <img class="icon" src="./assets/mail.png" />
+                            <a href="mailto:parpaglionev@gmail.com"> parpaglionev@gmail.com </a>
+                        </div>
+                        <div class="social-media-account">
+                            <img class="icon" src="./assets/whatsapp.png" />
+                            <a href="https://api.whatsapp.com/send?phone=+56952063484&text=Hola, me gustaría hacer una consulta"> +56 9 52063484 </a>
+                        </div>
+                        <div class="social-media-account">
+                            <img class="icon" src="./assets/instagram.png" />
+                            <a href="https://www.instagram.com/psicologavaleriaparpaglione/"> Instagram </a>
+                        </div>
+                        <div class="social-media-account">
+                            <img class="icon" src="./assets/doctoralia.png" />
+                            <a href="https://www.doctoralia.cl/valeria-parpaglione/psicologo/valparaiso"> Doctoralia </a>
+                        </div>
+                    </div>
+                    <form action="https://fabform.io/f/3o41FQj" method="post">
+                        <h1 class="footer-title">Contacto</h1>
+                        <label>Nombre</label>
+                        <input type="text" name="name"/>
+                        <label>Correo electrónico</label>
+                        <input type="email" name="email"/>
+                        <label>Teléfono</label>
+                        <input type="tel" name="phone"/>
+                        <label>Mensaje</label>
+                        <textarea name="msg"></textarea>
+                        <div id="button-container">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </footer>
+            </main>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>

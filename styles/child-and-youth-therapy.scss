@@ -1,0 +1,124 @@
+@import 'theme', 'main';
+
+body{
+    background-image: url('../assets/toys-pattern.webp');
+    
+}
+#main{
+    background-color: rgba(255,255,255,0.85);
+    background-blend-mode: lighten;
+}
+h1 {
+    text-align: center;
+    margin-top: $space-5;
+    margin-bottom: $space-2;
+}
+
+@media (min-width: 1024px) {
+    section {
+        padding: $space-3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: $space-3;
+        margin-bottom: $space-4;
+    }
+    .card {
+        margin-inline: $space-3;
+        display: flex;
+        width: 50vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img {
+            margin: $space-2;
+            max-width: 90%;
+        }
+    }
+
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    .service{
+        min-width: 35%;
+        max-width: 40%;
+    }
+    section {
+        padding: $space-3;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: $space-3;
+        margin-bottom: $space-4;
+    }
+    .card {
+        margin-inline: $space-3;
+        display: flex;
+        width: 50vw;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img {
+            max-width: 90%;
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: calc($font-size-0/1.5);
+        margin-bottom: 0;
+    }
+    section {
+        padding: $space-3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 10%;
+        img {
+            margin: $space-2;
+            max-width: 80%;
+        }
+    }
+    .service{
+        min-width: 80%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    #section-2 {
+        flex-direction: column-reverse;
+    }
+
+}
+
+#photo {
+    width: fit-content;
+    margin-top: $space-3;
+    margin-bottom: $space-3;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 30%;
+    img {
+        height: 64px;
+    }
+    p {
+        text-align: center;
+    }
+}
+.service-text{
+    font-weight: 600;
+}

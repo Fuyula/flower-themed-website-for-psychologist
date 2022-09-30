@@ -1,0 +1,41 @@
+@import 'theme', 'header/header', 'footer/footer', 'sidenav/sidenav';
+
+h1 {
+    color: $brown;
+    font-family: Square-peg;
+    font-size: $font-size-0;
+}
+
+p {
+    margin-top: $space-1;
+    font-size: $font-size-3;
+    font-weight: 500;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+#main {
+    transition: margin-left .5s;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: $white;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $pale-pink;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $primary;
+  }

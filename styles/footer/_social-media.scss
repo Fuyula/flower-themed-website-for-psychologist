@@ -1,0 +1,55 @@
+@import '../theme';
+
+img.icon {
+    height: 50px;
+    width: 50px;
+}
+#social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    h1 {
+        align-self: center;
+    }
+}
+.social-media-account {
+    align-self: center;
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    margin: $space-2;
+    align-items: center;
+    a {
+        font-size: $font-size-3;
+        margin-inline-start: $space-1;
+        font-weight: 700;
+        color: $dark-brown;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $brown;
+    }
+}
+
+@media (min-width: 769px) {
+    .social-media-account {
+        width: 70%;
+    }
+    #social-media {
+        align-self: flex-start;
+        flex-grow: 1;
+    }
+
+}
+@media (max-width: 768px) {
+    #social-media {
+        align-items: center;
+    }
+    .social-media-account {
+        align-self: flex-start;
+        width: 100%;
+        a{
+            font-size: $font-size-3;
+        }
+    }
+}
