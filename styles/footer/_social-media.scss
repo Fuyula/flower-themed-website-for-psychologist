@@ -50,6 +50,11 @@ img.icon {
         width: 100%;
         a{
             font-size: $font-size-3;
+            word-break: break-all;
         }
+    }
+    img.icon {
+        width: 32px;
+        height: auto;
     }
 }

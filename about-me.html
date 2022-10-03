@@ -15,24 +15,40 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Inicio</a>
-            <a href="child-and-youth-therapy.html">Terapia Infanto-Juvenil</a>
-            <a href="#">Terapia floral</a>
-            <a href="#">Contacto</a>
+            <a href="child-and-youth-therapy.html">Atención psicológica Infanto-Juvenil</a>
+            <div class="sidenav-dropdown hide">
+                <li><a href="#" onclick="collapseDropdown()" id="sidenav-dropdown">Terapia floral Bach</a></li>
+                <div class="sidenav-dropdown-content" id="sidenav-dropdown-content">
+                    <ul>
+                        <li><a href="bach-flower-remedies.html">¿Qué es?</a></li>
+                        <li><a href="products.html">Productos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="contact.html">Contacto</a>
         </div>
         <div id="main">
             <header>
                 <div id="logo">
                     <img src="./assets/logo.png" />
-                    <h3 id="logo-text">Psicóloga Valeria Parpaglione</h2>
+                    <h3 id="logo-text">Psicóloga Valeria Parpaglione</h3>
                 </div>
                 <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
                 <nav>
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
-                        <li class="active"><a href="#">Sobre mí</a></li>
-                        <li><a href="child-and-youth-therapy.html">Terapia Infanto-Juvenil</a></li>
-                        <li><a href="#">Terapia floral</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li class="active"><a href="about-me.html">Sobre mí</a></li>
+                        <li><a href="child-and-youth-therapy.html">Atención Infanto-Juvenil</a></li>
+                        <div class="dropdown">
+                            <li><a ref="#">Terapia floral Bach</a></li>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="bach-flower-remedies.html">¿Qué es?</a></li>
+                                    <li><a href="products.html">Productos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li><a href="contact.html">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
@@ -45,17 +61,21 @@
                     <div class="card animate__animated animate__fadeInDown animate__delay-1s">
                         <h1>Sobre mí</h1>
                         <p>
-                            Mi nombre es Valeria Parpaglione, psicóloga clínica y licenciada en psicología de la Pontificia Universidad Católica de Valparaíso. 
-                            Mi trabajo consiste en brindar un servicio psicológico integral para niños, niñas y jóvenes, donde prime la empatía y horizontalidad, 
-                            la seguridad y confianza, la ética, el papel activo del paciente y de su entorno en la terapia.
+                            ¡Hola! Mi nombre es Valeria Parpaglione, psicóloga, licenciada en psicología de la Pontificia Universidad Católica de Valparaíso 
+                            y Terapeuta Floral de la Escuela Madre Selva. <br> 
+                            Cuento con formación en psicodiagnóstico infanto-juvenil y especialización en tests proyectivos y de evaluación cognitiva, 
+                            con experiencia en clínica infanto-juvenil y psicología educacional.
                         </p>
                         <p>
-                            Actualmente me encuentro atendiendo pacientes infanto-juveniles de forma presencial y atención online y presencial de acompañamiento 
-                            con terapia floral para jóvenes y adultos.
+                            Mi trabajo consiste en brindar un servicio psicológico integral para niños, niñas y jóvenes, donde prime la empatía, la horizontalidad, 
+                            la seguridad y confianza, como también la responsabilidad, ética y el papel activo del paciente y de su entorno en la terapia.
                         </p>
                         <p>
-                            Si tienes cualquier tipo de duda o consulta, hablemos por instagram o vía Whatsapp, o consulta a través del formulario al final de 
-                            esta página.
+                            Actualmente me encuentro atendiendo pacientes infanto-juveniles de forma presencial en Viña del Mar y atención online y presencial 
+                            de acompañamiento con terapia floral para jóvenes y adultos.
+                        </p>
+                        <p>
+                            Si tienes cualquier tipo de duda o consulta, hablemos por instagram o vía Whatsapp, o consulta a través del formulario al final de esta página.
                         </p>
                         <h2>Especialización</h2>
                         <ul>
@@ -70,23 +90,35 @@
                     <div class="container">
                         <h1>Experiencia</h1>
                         <div class="info-card">
-                            <h3>Psicóloga en Chucunco City</h3>
+                            <h3>Atención clínica infanto-juvenil</h3>
                             <p class="info-date">
-                                12 de abril de 2022 - 24 de agosto de 2022
+                                2022 - actualidad
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dicta tempora eos enim ullam, accusamus architecto magnam officiis magni 
-                                et nulla ipsum consectetur possimus molestias! Aliquam, perspiciatis eum? Qui, doloribus.
+                                Atención psicológica de pacientes infanto-juveniles realizando evaluaciones psicológicas y 
+                                gestionando tratamiento para el apoyo en salud mental del TEA y otros diagnósticos. 
                             </p>
                         </div>
                         <div class="info-card">
-                            <h3>Psicóloga en Chucunco City</h3>
+                            <h3>Investigación en infancia</h3>
                             <p class="info-date">
-                                12 de abril de 2022 - 24 de agosto de 2022
+                                2021-2022
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dicta tempora eos enim ullam, accusamus architecto magnam officiis magni 
-                                et nulla ipsum consectetur possimus molestias! Aliquam, perspiciatis eum? Qui, doloribus.
+                                Colaboración en la investigación de la Universidad Autónoma de Chile sobre el apego en niños y 
+                                niñas en acogimiento familiar en Chile y su vinculación con la calidad del funcionamiento familiar 
+                                y el sentido de competencia parental desde los Programas de Familias de Acogida de SENAME. 
+                            </p>
+                        </div>
+                        <div class="info-card">
+                            <h3>Práctica profesional</h3>
+                            <p class="info-date">
+                                2021
+                            </p>
+                            <p>
+                                Práctica profesional como Psicóloga en la Clínica Psicológica de la PUCV con atención de pacientes 
+                                dentro del ámbito infanto-juvenil, intervenciones con los padres, distribución de material psicoeducativo 
+                                y elaboración de informes.
                             </p>
                         </div>
                     </div>
@@ -96,16 +128,30 @@
                         <h1>Formación</h1>
                         <div class="info-card education">
                             <div>
+                                <img src="./assets/education logos/UC.png"/>
+                            </div>
+                            <div>
+                                <h3>Certificación en WISC-V Nivel Intermedio CEDETi UC</h3>
+                                <p class="info-date">
+                                    2022
+                                </p>
+                                <p>
+                                    Buenas prácticas en aplicación, corrección, reporte y análisis de los índices principales para la escala de Wechsler de 
+                                    inteligencia para niños, quinta edición.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-card education">
+                            <div>
                                 <img src="./assets/education logos/PUCV.png"/>
                             </div>
                             <div>
-                                <h3>Psicóloga en Chucunco City</h3>
+                                <h3>Diplomado en Psicodiagnóstico Infantil</h3>
                                 <p class="info-date">
-                                    12 de abril de 2022 - 24 de agosto de 2022
+                                    2022
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dicta tempora eos enim ullam, accusamus architecto magnam officiis magni 
-                                    et nulla ipsum consectetur possimus molestias! Aliquam, perspiciatis eum? Qui, doloribus.
+                                    Diplomado en Psicodiagnóstico Infantil, pruebas proyectivas individuales y vinculares de la Escuela de Psicología PUC.
                                 </p>
                             </div>
                         </div>
@@ -114,19 +160,26 @@
                                 <img src="./assets/education logos/MadreSelva.png"/>
                             </div>
                             <div>
-                                <h3>Psicóloga en Chucunco City</h3>
+                                <h3>Diplomado de formación en Terapia Floral de la Escuela Madre Selva</h3>
                                 <p class="info-date">
-                                    12 de abril de 2022 - 24 de agosto de 2022
+                                    2022
                                 </p>
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dicta tempora eos enim ullam, accusamus architecto magnam officiis magni 
-                                    et nulla ipsum consectetur possimus molestias! Aliquam, perspiciatis eum? Qui, doloribus.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dicta tempora eos enim ullam, accusamus architecto magnam officiis magni 
-                                    et nulla ipsum consectetur possimus molestias! Aliquam, perspiciatis eum? Qui, doloribus.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dicta tempora eos enim ullam, accusamus architecto magnam officiis magni 
-                                    et nulla ipsum consectetur possimus molestias! Aliquam, perspiciatis eum? Qui, doloribus.
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dicta tempora eos enim ullam, accusamus architecto magnam officiis magni 
-                                    et nulla ipsum consectetur possimus molestias! Aliquam, perspiciatis eum? Qui, doloribus.
+                                    Diplomado de formación en Terapia Floral de la Escuela Madre Selva.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="info-card education">
+                            <div>
+                                <img src="./assets/education logos/UAI.png"/>
+                            </div>
+                            <div>
+                                <h3>Programa Intensivo de Estudios en Test Relaciones Objetales TRO y Test Apercepción Infantil CAT</h3>
+                                <p class="info-date">
+                                    2022
+                                </p>
+                                <p>
+                                    Programa Intensivo de Estudios en Test Relaciones Objetales TRO y Test Apercepción Infantil CAT. Universidad Adolfo Ibáñez.
                                 </p>
                             </div>
                         </div>
@@ -145,7 +198,7 @@
                         </div>
                         <div class="social-media-account">
                             <img class="icon" src="./assets/instagram.png" />
-                            <a href="https://www.instagram.com/psicologavaleriaparpaglione/"> Instagram </a>
+                            <a href="https://www.instagram.com/psicologavaleriaparpaglione/"> @psicologavaleriaparpaglione </a>
                         </div>
                         <div class="social-media-account">
                             <img class="icon" src="./assets/doctoralia.png" />
@@ -154,10 +207,10 @@
                     </div>
                     <form action="https://fabform.io/f/3o41FQj" method="post">
                         <h1 class="footer-title">Contacto</h1>
-                        <label>Nombre</label>
-                        <input type="text" name="name"/>
-                        <label>Correo electrónico</label>
-                        <input type="email" name="email"/>
+                        <label>Nombre*</label>
+                        <input type="text" name="name" required/>
+                        <label>Correo electrónico*</label>
+                        <input type="email" name="email" required/>
                         <label>Teléfono</label>
                         <input type="tel" name="phone"/>
                         <label>Mensaje</label>

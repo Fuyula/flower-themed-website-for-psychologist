@@ -1,5 +1,10 @@
 @import '../theme';
 
+@media (min-width: 769px) {
+  #mySidenav{
+    display: none;
+  }
+}
 /* The side navigation menu */
 .sidenav {
     display: flex;
@@ -12,15 +17,53 @@
     left: 0;
     background-color: $font-color; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20%; /* Place content 60px from the top */
+    padding-top: 15vh; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    .sidenav-dropdown {
+      position: relative;
+      display: inline-block;
+      a {
+        margin-top: 0px;
+        padding-top: 0px;
+      }
+      .sidenav-dropdown-content {
+          display: none;
+          position: relative;
+          margin-top: $space-1;
+          background-color: rgba($color: $primary, $alpha: 0.6);
+          z-index: 1;
+          padding: $space-0;
+          a{
+            padding: $space-1;
+          }
+          &.show{ 
+            animation: animateFromBottom 1s;
+            
+            
+          }
+          &.hide { 
+            animation: animateToBottom 0.5s;
+          }
+        }
+      
+      ul {
+          list-style: none;
+          text-decoration: none;
+          margin-bottom: $space-1;
+          li {
+              display: block;
+              margin: $space-0;
+          }
+      }
+         
+  }
   }
   
   /* The navigation menu links */
   .sidenav a {
-    padding: 8px 10px 10px 32px;
+    padding: 5% 0% 0% 5%;
     text-decoration: none;
-    font-size: $font-size-3;
+    font-size: $font-size-4;
     color: $white;
     display: block;
     transition: 0.3s;
@@ -36,4 +79,38 @@
     font-size: 36px;
     align-self: flex-end;
     margin-inline-end: 10%;
+  }
+
+  @keyframes animateFromBottom {
+    0% {
+      transform: translate(0, -100%);
+      opacity: 0
+    }
+    10%{
+      transform: translate(0, -5%);
+      opacity: 0.05;
+    }
+    100% {
+      transform: translate(0%, 0%);
+      opacity: 1
+    }
+  }
+  
+  @keyframes animateToBottom {
+    0% {
+      transform: translate(0%, 0%);
+      opacity: 1
+    }
+    90%{
+      transform: translate(0, -10%);
+      opacity: 0.05;
+    }
+    98%{
+      transform: translate(0, -50%);
+      opacity: 0.001;
+    }
+    100% {
+      transform: translate(0, -100%);
+      opacity: 0
+    }
   }

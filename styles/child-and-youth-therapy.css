@@ -76,6 +76,34 @@ header li.active a {
   background-color: #ffffff;
   color: #F4ACB7;
 }
+header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+header .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(244, 172, 183, 0.6);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 95%;
+  padding: 5px;
+}
+header .dropdown .dropdown-content a:hover {
+  background-color: rgba(81, 62, 67, 0.2);
+}
+header .dropdown:hover .dropdown-content {
+  display: block;
+}
+header .dropdown ul {
+  margin-top: 4vh;
+  list-style: none;
+  text-decoration: none;
+}
+header .dropdown ul li {
+  display: block;
+  margin: 16px;
+}
 
 #logo {
   display: flex;
@@ -93,7 +121,6 @@ header li.active a {
   header li a {
     font-size: 16px;
     padding: 12px;
-    margin: 5px;
   }
   header i {
     display: none;
@@ -107,7 +134,6 @@ header li.active a {
   header li a {
     font-size: 16px;
     padding: 12px;
-    margin: 5px;
   }
   header i {
     display: none;
@@ -115,6 +141,12 @@ header li.active a {
   }
 }
 @media (max-width: 768px) {
+  header #logo-text {
+    font-size: 24px;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+  }
   header nav {
     display: none;
   }
@@ -284,6 +316,11 @@ img.icon {
   }
   .social-media-account a {
     font-size: 18px;
+    word-break: break-all;
+  }
+  img.icon {
+    width: 32px;
+    height: auto;
   }
 }
 footer {
@@ -329,6 +366,11 @@ footer {
   color: #513E43;
 }
 
+@media (min-width: 769px) {
+  #mySidenav {
+    display: none;
+  }
+}
 /* The side navigation menu */
 .sidenav {
   display: flex;
@@ -341,15 +383,49 @@ footer {
   left: 0;
   background-color: #513E43; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 20%; /* Place content 60px from the top */
+  padding-top: 15vh; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.sidenav .sidenav-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.sidenav .sidenav-dropdown a {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.sidenav .sidenav-dropdown .sidenav-dropdown-content {
+  display: none;
+  position: relative;
+  margin-top: 12px;
+  background-color: rgba(244, 172, 183, 0.6);
+  z-index: 1;
+  padding: 5px;
+}
+.sidenav .sidenav-dropdown .sidenav-dropdown-content a {
+  padding: 12px;
+}
+.sidenav .sidenav-dropdown .sidenav-dropdown-content.show {
+  animation: animateFromBottom 1s;
+}
+.sidenav .sidenav-dropdown .sidenav-dropdown-content.hide {
+  animation: animateToBottom 0.5s;
+}
+.sidenav .sidenav-dropdown ul {
+  list-style: none;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+.sidenav .sidenav-dropdown ul li {
+  display: block;
+  margin: 5px;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 10px 10px 32px;
+  padding: 5% 0% 0% 5%;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #ffffff;
   display: block;
   transition: 0.3s;
@@ -367,6 +443,38 @@ footer {
   margin-inline-end: 10%;
 }
 
+@keyframes animateFromBottom {
+  0% {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+  10% {
+    transform: translate(0, -5%);
+    opacity: 0.05;
+  }
+  100% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+}
+@keyframes animateToBottom {
+  0% {
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+  90% {
+    transform: translate(0, -10%);
+    opacity: 0.05;
+  }
+  98% {
+    transform: translate(0, -50%);
+    opacity: 0.001;
+  }
+  100% {
+    transform: translate(0, -100%);
+    opacity: 0;
+  }
+}
 h1 {
   color: #9D8189;
   font-family: Square-peg;
@@ -505,29 +613,6 @@ h1 {
   #section-2 {
     flex-direction: column-reverse;
   }
-}
-#photo {
-  width: fit-content;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.service {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 30%;
-}
-.service img {
-  height: 64px;
-}
-.service p {
-  text-align: center;
-}
-
-.service-text {
-  font-weight: 600;
 }
 
 /*# sourceMappingURL=child-and-youth-therapy.css.map */

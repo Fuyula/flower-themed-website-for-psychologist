@@ -15,24 +15,40 @@
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="about-me.html">Sobre mí</a>
-            <a href="child-and-youth-therapy.html">Terapia Infanto-Juvenil</a>
-            <a href="#">Terapia floral</a>
-            <a href="#">Contacto</a>
+            <a href="child-and-youth-therapy.html">Atención psicológica Infanto-Juvenil</a>
+            <div class="sidenav-dropdown hide">
+                <li><a href="#" onclick="collapseDropdown()" id="sidenav-dropdown">Terapia floral Bach</a></li>
+                <div class="sidenav-dropdown-content" id="sidenav-dropdown-content">
+                    <ul>
+                        <li><a href="bach-flower-remedies.html">¿Qué es?</a></li>
+                        <li><a href="products.html">Productos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="contact.html">Contacto</a>
         </div>
         <div id="main">
             <header>
                 <div id="logo">
                     <img src="./assets/logo.png" />
-                    <h3 id="logo-text">Psicóloga Valeria Parpaglione</h2>
+                    <h3 id="logo-text">Psicóloga Valeria Parpaglione</h3>
                 </div>
                 <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
                 <nav>
                     <ul>
-                        <li class="active"><a ref="#">Inicio</a></li>
+                        <li class="active"><a href="#">Inicio</a></li>
                         <li><a href="about-me.html">Sobre mí</a></li>
-                        <li><a href="child-and-youth-therapy.html">Terapia Infanto-Juvenil</a></li>
-                        <li><a href="#">Terapia floral</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="child-and-youth-therapy.html">Atención Infanto-Juvenil</a></li>
+                        <div class="dropdown">
+                            <li><a ref="#">Terapia floral Bach</a></li>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="bach-flower-remedies.html">¿Qué es?</a></li>
+                                    <li><a href="products.html">Productos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li><a href="contact.html">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
@@ -42,9 +58,13 @@
                         <h1>Psicóloga clínica<br/> Valeria Parpaglione</h1>
                         <img src="./assets/photo-alternative.png" id="photo"/>
                         <p>
-                            Mi nombre es Valeria Parpaglione, psicóloga clínica y licenciada en psicología de la Pontificia Universidad Católica de Valparaíso. 
-                            Mi trabajo consiste en brindar un servicio psicológico integral para niños, niñas y jóvenes, donde prime la empatía y horizontalidad, 
-                            la seguridad y confianza, la ética, el papel activo del paciente y de su entorno en la terapia.
+                            ¡Hola! Mi nombre es Valeria Parpaglione, psicóloga, licenciada en psicología de la Pontificia Universidad Católica de Valparaíso y 
+                            Terapeuta Floral de la Escuela Madre Selva. 
+                        </p>
+                        <p>
+                            Mi trabajo consiste en brindar una atención psicológica integral para niños, niñas y adolescentes, donde prime la empatía, la 
+                            horizontalidad, la seguridad y confianza, como también la responsabilidad, ética y el papel activo del paciente y de su entorno 
+                            en la terapia.
                         </p>
                     </div>
                     <div class="card animate__animated animate__fadeInDown animate__delay-1s">
@@ -54,13 +74,18 @@
                 <section id="section-2">
                     <div class="service">
                         <img src="./assets/videocall.png" />
-                        <p class="service-text">Terapia floral online</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloremque similique consequuntur modi perspiciatis,</p>
+                        <p class="service-text">Terapia floral Bach online</p>
+                        <p>Servicio de Terapia Floral en sistema Bach destinado a jóvenes y adultos desde los 14 años.</p>
+                    </div>
+                    <div class="service">
+                        <img src="./assets/flower-flask.png" />
+                        <p class="service-text">Terapia floral Bach presencial</p>
+                        <p>Servicio de Terapia Floral en sistema Bach destinado a jóvenes y adultos desde los 14 años.</p>
                     </div>
                     <div class="service">
                         <img src="./assets/divan.png" />
                         <p class="service-text">Atención psicológica infanto-juvenil presencial</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloremque similique consequuntur modi perspiciatis,</p>
+                        <p>Servicio de evaluación y terapia psicológica destinado a niños, niñas y jóvenes desde los 3 años.</p>
                     </div>
                 </section>
                 <section>
@@ -86,7 +111,7 @@
                         </div>
                         <div class="social-media-account">
                             <img class="icon" src="./assets/instagram.png" />
-                            <a href="https://www.instagram.com/psicologavaleriaparpaglione/"> Instagram </a>
+                            <a href="https://www.instagram.com/psicologavaleriaparpaglione/"> @psicologavaleriaparpaglione </a>
                         </div>
                         <div class="social-media-account">
                             <img class="icon" src="./assets/doctoralia.png" />
@@ -95,10 +120,10 @@
                     </div>
                     <form action="https://fabform.io/f/3o41FQj" method="post">
                         <h1 class="footer-title">Contacto</h1>
-                        <label>Nombre</label>
-                        <input type="text" name="name"/>
-                        <label>Correo electrónico</label>
-                        <input type="email" name="email"/>
+                        <label>Nombre*</label>
+                        <input type="text" name="name" required/>
+                        <label>Correo electrónico*</label>
+                        <input type="email" name="email" required/>
                         <label>Teléfono</label>
                         <input type="tel" name="phone"/>
                         <label>Mensaje</label>

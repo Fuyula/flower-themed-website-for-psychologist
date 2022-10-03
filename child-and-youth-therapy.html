@@ -16,23 +16,39 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="index.html">Inicio</a>
             <a href="about-me.html">Sobre mí</a>
-            <a href="#">Terapia floral</a>
-            <a href="#">Contacto</a>
+            <div class="sidenav-dropdown hide">
+                <li><a href="#" onclick="collapseDropdown()" id="sidenav-dropdown">Terapia floral Bach</a></li>
+                <div class="sidenav-dropdown-content" id="sidenav-dropdown-content">
+                    <ul>
+                        <li><a href="bach-flower-remedies.html">¿Qué es?</a></li>
+                        <li><a href="products.html">Productos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="contact.html">Contacto</a>
         </div>
         <div id="main">
             <header>
                 <div id="logo">
                     <img src="./assets/logo.png" />
-                    <h3 id="logo-text">Psicóloga Valeria Parpaglione</h2>
+                    <h3 id="logo-text">Psicóloga Valeria Parpaglione</h3>
                 </div>
                 <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
                 <nav>
                     <ul>
-                        <li ><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html">Inicio</a></li>
                         <li><a href="about-me.html">Sobre mí</a></li>
-                        <li class="active"><a href="#">Terapia Infanto-Juvenil</a></li>
-                        <li><a href="#">Terapia floral</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li class="active"><a href="child-and-youth-therapy.html">Atención Infanto-Juvenil</a></li>
+                        <div class="dropdown">
+                            <li><a ref="#">Terapia floral Bach</a></li>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="bach-flower-remedies.html">¿Qué es?</a></li>
+                                    <li><a href="products.html">Productos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li><a href="contact.html">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
@@ -69,7 +85,7 @@
                         </div>
                         <div class="social-media-account">
                             <img class="icon" src="./assets/instagram.png" />
-                            <a href="https://www.instagram.com/psicologavaleriaparpaglione/"> Instagram </a>
+                            <a href="https://www.instagram.com/psicologavaleriaparpaglione/"> @psicologavaleriaparpaglione </a>
                         </div>
                         <div class="social-media-account">
                             <img class="icon" src="./assets/doctoralia.png" />
@@ -78,14 +94,14 @@
                     </div>
                     <form action="https://fabform.io/f/3o41FQj" method="post">
                         <h1 class="footer-title">Contacto</h1>
-                        <label>Nombre</label>
-                        <input type="text" />
-                        <label>Correo electrónico</label>
-                        <input type="email"/>
+                        <label>Nombre*</label>
+                        <input type="text" name="name" required/>
+                        <label>Correo electrónico*</label>
+                        <input type="email" name="email" required/>
                         <label>Teléfono</label>
-                        <input type="tel"/>
+                        <input type="tel" name="phone"/>
                         <label>Mensaje</label>
-                        <textarea></textarea>
+                        <textarea name="msg"></textarea>
                         <div id="button-container">
                             <button type="submit">Enviar</button>
                         </div>

@@ -16,10 +16,24 @@ window.addEventListener('scroll', function() {
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-    document.getElementById("mySidenav").style.width = "75%";
+    document.getElementById("mySidenav").style.width = "60%";
   }
   
   /* Set the width of the side navigation to 0 */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+function collapseDropdown() {
+  const status = document.getElementById("sidenav-dropdown-content").style.display;
+  if (status == "block"){
+    document.getElementById("sidenav-dropdown-content").className = "sidenav-dropdown-content hide";
+    setTimeout(() => {
+      document.getElementById("sidenav-dropdown-content").style.display = "none";
+    }, 450)
+    
+  }
+  else {
+    document.getElementById("sidenav-dropdown-content").style.display = "block";
+    document.getElementById("sidenav-dropdown-content").className = "sidenav-dropdown-content show"
+  }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Psicóloga Valeria Parpaglione</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="./assets/logo.png">
+        <link rel="stylesheet" href="./styles/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html">Inicio</a>
+            <a href="about-me.html">Sobre mí</a>
+            <a href="child-and-youth-therapy.html">Atención psicológica Infanto-Juvenil</a>
+            <div class="sidenav-dropdown hide">
+                <li><a href="#" onclick="collapseDropdown()" id="sidenav-dropdown">Terapia floral Bach</a></li>
+                <div class="sidenav-dropdown-content" id="sidenav-dropdown-content">
+                    <ul>
+                        <li><a href="bach-flower-remedies.html">¿Qué es?</a></li>
+                        <li><a href="products.html">Productos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <header>
+                <div id="logo">
+                    <img src="./assets/logo.png" />
+                    <h3 id="logo-text">Psicóloga Valeria Parpaglione</h3>
+                </div>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openNav()"></i>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="about-me.html">Sobre mí</a></li>
+                        <li><a href="child-and-youth-therapy.html">Atención Infanto-Juvenil</a></li>
+                        <div class="dropdown">
+                            <li><a ref="#">Terapia floral Bach</a></li>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li><a href="bach-flower-remedies.html">¿Qué es?</a></li>
+                                    <li><a href="products.html">Productos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <li class="active"><a href="contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section>
+                    <h1>Contáctame</h1>
+                    <div id="contact-me">
+                        <div class="card" id="map-container">
+                            <h2>Agenda a través de</h2>
+                            <p>Agenda a través de WhatsApp al número <a href="https://api.whatsapp.com/send?phone=+56952063484&text=Hola, me gustaría agendar"> +56 9 52063484 </a></p>
+                            <h2>Encuéntrame en</h2>
+                            <p>Arlegui 160, oficina 5, Edificio Lautaro, Viña del Mar.</p>
+                            <iframe 
+                                id="map" 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836.318844239703!2d-71.56089077074648!3d-33.02287477435275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde2d5763b25%3A0x33346a687f437692!2sArlegui%20160%2C%20Vi%C3%B1a%20del%20Mar%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1664746389096!5m2!1ses-419!2scl" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="card">
+                            <form action="https://fabform.io/f/3o41FQj" method="post" id="contact-form">
+                                <h2>Hablemos</h2>
+                                <p>Puedes consultar a través de este formulario, me comunicaré contigo a la brevedad al email o número que indiques.</p>
+                                <label>Nombre*</label>
+                                <input type="text" name="name" required/>
+                                <label>Correo electrónico*</label>
+                                <input type="email" name="email" required/>
+                                <label>Teléfono</label>
+                                <input type="tel" name="phone"/>
+                                <label>Mensaje</label>
+                                <textarea name="msg"></textarea>
+                                <div id="button-container-alternative">
+                                    <button type="submit">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <footer id="contact">
+                    <div id="social-media" >
+                        <h1 class="footer-title">Encuéntrame en</h1>
+                        <div class="social-media-account">
+                            <img class="icon" src="./assets/mail.png" />
+                            <a href="mailto:parpaglionev@gmail.com"> parpaglionev@gmail.com </a>
+                        </div>
+                        <div class="social-media-account">
+                            <img class="icon" src="./assets/whatsapp.png" />
+                            <a href="https://api.whatsapp.com/send?phone=+56952063484&text=Hola, me gustaría hacer una consulta"> +56 9 52063484 </a>
+                        </div>
+                        <div class="social-media-account">
+                            <img class="icon" src="./assets/instagram.png" />
+                            <a href="https://www.instagram.com/psicologavaleriaparpaglione/"> @psicologavaleriaparpaglione </a>
+                        </div>
+                        <div class="social-media-account">
+                            <img class="icon" src="./assets/doctoralia.png" />
+                            <a href="https://www.doctoralia.cl/valeria-parpaglione/psicologo/valparaiso"> Doctoralia </a>
+                        </div>
+                    </div>
+                    <form action="https://fabform.io/f/3o41FQj" method="post">
+                        <h1 class="footer-title">Contacto</h1>
+                        <label>Nombre*</label>
+                        <input type="text" name="name" required/>
+                        <label>Correo electrónico*</label>
+                        <input type="email" name="email" required/>
+                        <label>Teléfono</label>
+                        <input type="tel" name="phone"/>
+                        <label>Mensaje</label>
+                        <textarea name="msg"></textarea>
+                        <div id="button-container">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </footer>
+            </main>
+        </div>
+        <script src="index.js" async defer></script>
+    </body>
+</html>
