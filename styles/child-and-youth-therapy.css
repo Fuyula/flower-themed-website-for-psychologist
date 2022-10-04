@@ -531,6 +531,10 @@ h1 {
   margin-bottom: 16px;
 }
 
+h2 {
+  color: #9D8189;
+}
+
 @media (min-width: 1024px) {
   section {
     padding: 30px;
