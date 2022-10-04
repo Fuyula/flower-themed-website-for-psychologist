@@ -29,6 +29,40 @@
   color: #513E43;
 }
 
+#go-to-top-button {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 65px;
+  align-items: center;
+  justify-content: center;
+}
+#go-to-top-button img {
+  width: 100%;
+}
+
+#go-to-top-button:hover {
+  /* Add a dark-grey background on hover */
+}
+#go-to-top-button:hover img {
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  #go-to-top-button {
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
+  }
+}
 @font-face {
   font-family: Square-peg;
   src: url(../assets/SquarePeg-Regular.ttf);
