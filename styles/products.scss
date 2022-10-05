@@ -11,72 +11,83 @@ body{
 h1 {
     text-align: center;
     margin-top: $space-5;
-    margin-bottom: $space-2;
 }
 h2 {
     color: $brown;
 }
 .card {
-        margin: $space-1;
-        padding: $space-1;
+        border-radius: 30px;
+        box-shadow: $shadow-color;
+        margin-inline: $space-2;
         display: flex;
-        width: 20%;
-        border-radius: 20px;
+        min-width: 30%;
+        max-width: 30%;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        box-shadow: $shadow-color;
-        background-color: $white;
-        img {
-            border-radius: 15px;
-            margin: $space-1;
-            max-width: 80%;
-            max-height: 50%;
+        .img-container{
+          border-radius: 30px 30px 0px 0px;
+          width: 100%;
+          margin: 0px;
+          background-color: rgba($color: $secondary, $alpha: 0.3);
+          padding: $space-3 0px $space-3 0px;
+          img {
+            margin-inline: $space-3;
+            border-radius: 20px;
+            object-fit:contain;
+            max-height: 40vh;
+            margin: 0px;
+              
+          }
+          &:hover {
+            opacity: 0.6;
+          }
         }
-        p {
-            margin: $space-1;
+        .text-container {
+          padding: $space-2;
+          background-color: rgba($color: $white, $alpha: 0.5);
+          border-radius: 0px 0px 30px 30px;
+          a { 
+              color: $brown;
+              text-decoration: none;
+              &:hover{
+                opacity: 0.6;
+              }
+            }
+          h2 {
+            margin: $space-2 $space-2 $space-2 0px;
+            
+          }
+          p {
+            padding: $space-2;
+            span {
+              color: $brown;
+              font-weight: bold;
+            }
+          }
         }
+        
     }
 section {
-        padding: $space-3;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        margin-top: $space-1;
-        margin-bottom: $space-1;
-    }
-@media (min-width: 1024px) {
-    section {
-        padding: $space-3;
-        flex-direction: row;
-        margin-top: $space-1;
-        margin-bottom: $space-1;
-    }
-    
-
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    padding: $space-3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: $space-1;
+    margin-bottom: $space-1;
 }
 @media (min-width: 769px) and (max-width: 1023px) {
     section {
         padding: $space-3;
-        display: flex;
-        flex-direction: row;
-        margin-top: $space-2;
-        margin-bottom: $space-2;
     }
     .card {
-        margin-inline: $space-3;
-        display: flex;
-        width: 35%;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        img {
-            max-width: 90%;
-        }
+      min-width: 45%;
+      margin-bottom: $space-3;
     }
-
+    
 }
 @media (max-width: 768px) {
     h1 {
@@ -84,8 +95,7 @@ section {
         margin-bottom: 0;
     }
     section {
-        padding: $space-3;
-        display: flex;
+        padding: $space-1;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -93,19 +103,15 @@ section {
         margin-bottom: 0;
     }
     .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        width: 80%;
-        img {
-            margin: $space-2;
-            max-width: 80%;
-        }
-        
-    }
-    #section-2 {
-        flex-direction: column-reverse;
+      min-width: 90%;
+      margin-inline: $space-0;
+      margin-bottom: $space-3;
+      img {
+        margin-inline: $space-0;
+        max-width: 80%;
+        height: auto;
+        max-height: 90%;
+      }
     }
 
 }

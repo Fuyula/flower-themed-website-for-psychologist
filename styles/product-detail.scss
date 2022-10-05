@@ -1,0 +1,133 @@
+@import 'theme', 'main';
+
+body{
+    background-image: url('../assets/background.webp');
+    
+}
+#main{
+    background-color: rgba(255,255,255,0.85);
+    background-blend-mode: lighten;
+}
+h1 {
+    text-align: center;
+    margin-top: $space-5;
+    margin-bottom: $space-2;
+}
+h2 {
+    color: $brown;
+}
+
+.card {
+    margin-inline: $space-1;
+    display: flex;
+    max-width: 45%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    p {
+        padding-left: 5%;
+        padding-right: 10%;
+        margin-top: $space-2;
+        margin-bottom: $space-2;
+        span {
+            color: $brown;
+            font-style: italic;
+        }
+    }
+    img {
+        margin: $space-0;
+        border-radius: 20px;
+        width: 30vw;
+    }
+    ul {
+        padding-left: 5%;
+        padding-right: 10%;
+        margin-bottom: $space-2;
+        li{
+            text-align: left;
+            font-size: $font-size-3;
+            margin-top: $space-1;
+            margin-bottom: $space-1;
+            list-style: none;
+            &::before{
+                content: "✿ ";
+                color: $brown;
+            }
+        }
+        
+    }
+}
+section {
+    padding: $space-3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: $space-1;
+    margin-bottom: $space-1;
+}
+@media (min-width: 769px) and (max-width: 1023px) {
+    section {
+        padding: $space-3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: $space-2;
+        margin-bottom: $space-2;
+    }
+    .card {
+        margin-inline: $space-3;
+        display: flex;
+        max-width: 100%;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        img {
+            min-width: 80%;
+            max-width: 90%;
+            width: auto;
+        }
+        p {
+            padding-inline: 5%;
+        }
+    }
+
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: calc($font-size-0/1.5);
+        margin-bottom: 0;
+    }
+    section {
+        padding: $space-3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        width: auto;
+        img {
+            margin: $space-2;
+            min-width: 80%;
+            max-width: 90%;
+            width: auto;
+        }
+        p {
+            padding-inline: 0px;
+        }
+    }
+    #section-2 {
+        flex-direction: column-reverse;
+    }
+
+}
