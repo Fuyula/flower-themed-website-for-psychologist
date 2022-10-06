@@ -22,6 +22,7 @@ h2 {
         display: flex;
         min-width: 30%;
         max-width: 30%;
+        align-self: stretch;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -106,6 +107,7 @@ section {
       min-width: 90%;
       margin-inline: $space-0;
       margin-bottom: $space-3;
+      align-self: center;
       img {
         margin-inline: $space-0;
         max-width: 80%;
